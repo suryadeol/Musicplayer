@@ -1,0 +1,109 @@
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="css/s3.css"/>
+   <script>
+    var bleep1 =new Audio();
+    bleep1.src="songs/dj_tillu.mp3";
+    
+    var bleep2 =new Audio();
+    bleep2.src="songs/tholiprema.mp3";
+    
+    var bleep3 =new Audio();
+    bleep3.src="songs/tumhiho.mp3";
+    
+    var bleep4 =new Audio();
+    bleep4.src="songs/Love Action.mp3";
+    
+    var bleep5 =new Audio();
+    bleep5.src="songs/satis.mp3";
+    
+    var bleep6 =new Audio();
+    bleep6.src="songs/krish.mp3";
+
+    function loadContent(num)
+    {
+        if(num==1)
+        {
+        bleep1.play();
+        var div1=document.getElementById("div1");
+        div1.innerHTML="loaded content for"+num;
+        }
+        else if(num==2)
+        {
+        bleep2.play();
+        var div1=document.getElementById("div1");
+        div1.innerHTML="loaded content for"+num;
+        }
+        else if(num==3)
+        {
+        bleep3.play();
+        var div1=document.getElementById("div1");
+        div1.innerHTML="loaded content for"+num;
+        }
+        else if(num==4)
+        {
+        bleep4.play();
+        var div1=document.getElementById("div1");
+        div1.innerHTML="loaded content for"+num;
+        }
+        else if(num==5)
+        {
+        bleep5.play();
+        var div1=document.getElementById("div1");
+        div1.innerHTML="loaded content for"+num;
+        }
+        else if(num==6)
+        {
+        bleep6.play();
+        var div1=document.getElementById("div1");
+        div1.innerHTML="loaded content for"+num;
+        }
+    }
+   </script>
+</head>
+<body>
+<h1>FEEL THE BEAUTY OF MUSIC</h1>
+<p>WELCOME TO SURYA'S MUSIC ZONE</p>
+<h2>MUSIC PLAYER STRATING....!</h2>
+ 
+   <nav id="nav1">
+    <button onclick="loadContent(1)">DJ!</button>
+    <button onclick="loadContent(2)">MELODY</button>
+    <button onclick="loadContent(3)">SAD</button>
+    <button onclick="loadContent(4)">HAPPY</button>
+    <button onclick="loadContent(5)">ANGRY</button>
+    <button onclick="loadContent(6)">DEVOTIONAL</button>
+  </nav>
+  <div id="div1">DEFAULT CONTENT....</div>
+
+<img src="images/pic2.jpg" alt="MELODY TIME" class="center">
+
+   <section class="order" id="order">
+      <h1 class="heading"><span>GIVE US FEEDBACK!!!!!</span></h1>
+
+      <div class="row">
+        <form action="/" method="post">
+          <div class="inputBox">
+            <input type="text" placeholder="name" name="name"/>
+            <input type="email" placeholder="email" name="email"/>
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="rate us" name="rate" />
+            <input type="text" placeholder="mention your feel" name="feel" />
+          </div>
+
+          <textarea
+            placeholder="suggestions"
+            name="sugg"
+            id=""
+            cols="30"
+            rows="10"></textarea>
+
+          <input type="submit" value="SUBMIT" class="btn" />
+        </form>
+      </div>
+    </section>
+
+</body>
+</html>
+
